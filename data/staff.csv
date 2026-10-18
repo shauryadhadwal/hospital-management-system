@@ -1,9 +1,9 @@
 id,department_id,first_name,last_name,role,phone,email,hire_date,username,password_hash,login_enabled,created_at,updated_at
-1,1,Arvind,Rao,doctor,9810000001,arvind.rao@hospital.example,2018-03-01,dr.rao,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
-2,1,Neha,Iyer,doctor,9810000002,neha.iyer@hospital.example,2020-07-15,dr.iyer,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
-3,1,Anita,Menon,nurse,9810000003,anita.menon@hospital.example,2019-05-10,nurse.anita,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
-4,4,Vikram,Singh,nurse,9810000004,vikram.singh@hospital.example,2021-02-01,nurse.vikram,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
-5,2,Meera,Kapoor,receptionist,9810000005,meera.kapoor@hospital.example,2022-01-10,reception.meera,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+1,1,Arvind,Rao,doctor,9810000001,arvind.rao@hospital.example,2018-03-01,dr.rao,$2b$10$uezTmi1x/WD6djCxssf7w.nS/cTV2LDhdR0ljibPvMVzrxkDVdAP2,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+2,1,Neha,Iyer,doctor,9810000002,neha.iyer@hospital.example,2020-07-15,dr.iyer,$2b$10$T/IzuD9.urB4RVeF/nxqLOREo79ki8y92Cdu6eOjmVv8ceOYuFLNq,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+3,1,Anita,Menon,nurse,9810000003,anita.menon@hospital.example,2019-05-10,nurse.anita,$2b$10$skqghJLCBGW4innX28aUMONDQNYs8/a4BweEv9XfTK/JMwEZ3sQ/O,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+4,4,Vikram,Singh,nurse,9810000004,vikram.singh@hospital.example,2021-02-01,nurse.vikram,$2b$10$3EbSzPfzkaNSDxpDMEDgt.z1/hpBigywY5q1nBAS7lfd8I/Loyk6.,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+5,2,Meera,Kapoor,receptionist,9810000005,meera.kapoor@hospital.example,2022-01-10,reception.meera,$2b$10$zf.MBk6Umi837NZmHq5JD.yT1QQsA80STHvo5V98IODoO9xqPOTuS,true,2026-01-05 09:00:00,2026-01-05 09:00:00
 6,2,Sanjay,Gupta,admin,9810000006,sanjay.gupta@hospital.example,2017-09-01,,,false,2026-01-05 09:00:00,2026-01-05 09:00:00
-7,3,Ravi,Kumar,lab,9810000007,ravi.kumar@hospital.example,2020-11-20,lab.ravi,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
-8,3,Pooja,Desai,lab,9810000008,pooja.desai@hospital.example,2023-04-03,lab.pooja,$2b$10$VBP/JDAs3Mhj47HNv23Uu.sh/JYDo7gg/eb1Uhf7RK5tmRLE9YfaG,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+7,3,Ravi,Kumar,lab,9810000007,ravi.kumar@hospital.example,2020-11-20,lab.ravi,$2b$10$2t9RC.lR0sCI88qlCvbcjugMU9ur.0oye2PEr6b/vPO3SP2qhxUUm,true,2026-01-05 09:00:00,2026-01-05 09:00:00
+8,3,Pooja,Desai,lab,9810000008,pooja.desai@hospital.example,2023-04-03,lab.pooja,$2b$10$WFFwxBqbDA0My9Xwo0LpDu47S4OFz1KiLZq0qhHdJbYZyOh/1eaMe,true,2026-01-05 09:00:00,2026-01-05 09:00:00

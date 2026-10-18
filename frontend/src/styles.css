@@ -1,0 +1,85 @@
+/* All the styling for the app.
+   A CSS rule is: selector { property: value; }
+   - "body" selects every <body> tag
+   - ".error" selects every element with className="error"
+   - ".header nav a" selects every <a> inside a <nav> inside an element with class "header" */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
+}
+
+button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  padding: 6px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  font: inherit;
+}
+
+/* Header bar: "display: flex" lines its children up in a row;
+   "justify-content: space-between" pushes them to opposite ends. */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #1e3a8a;
+  color: white;
+}
+
+.header nav a {
+  color: #c7d2fe;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+/* NavLink adds the "active" class to the link for the current page. */
+.header nav a.active {
+  color: white;
+  font-weight: bold;
+}
+
+.page {
+  padding: 20px;
+}
+
+/* A form whose fields sit on top of each other. */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form button {
+  margin-left: 0;
+}
+
+.login {
+  max-width: 320px;
+  margin: 80px auto; /* "auto" left and right margins centre the box */
+}
+
+.error {
+  color: #b91c1c;
+}

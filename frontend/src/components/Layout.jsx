@@ -3,13 +3,14 @@
 import { NavLink } from "react-router-dom";
 
 // Which menu links each role sees. Each link is [URL, label].
-// The pages are added in later stages. Until then, only Home exists.
+// Admin setup (departments, staff, rooms, prices, insurance providers) is not in the menu:
+// the admin does it in Swagger at /docs. Admin only views Patients, Visits and Billing here.
 const MENU = {
-  admin: [["/", "Home"]],
-  receptionist: [["/", "Home"]],
-  nurse: [["/", "Home"]],
-  doctor: [["/", "Home"]],
-  lab: [["/", "Home"]],
+  admin: [["/", "Home"], ["/patients", "Patients"], ["/visits", "Visits"], ["/billing", "Billing"]],
+  receptionist: [["/", "Home"], ["/patients", "Patients"], ["/visits", "Visits"], ["/billing", "Billing"]],
+  nurse: [["/", "Home"], ["/patients", "Patients"], ["/visits", "Visits"]],
+  doctor: [["/", "Home"], ["/patients", "Patients"], ["/visits", "Visits"]],
+  lab: [["/", "Home"], ["/lab", "Lab orders"]],
 };
 
 // "children" is a special prop: whatever is written between <Layout> and </Layout> in App.

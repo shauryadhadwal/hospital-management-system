@@ -2,7 +2,7 @@
 
 A React app for the backend in `../backend/`. Staff log in and see a menu for their role (admin, receptionist, nurse, doctor, lab). It runs locally only. Happy path only.
 
-For a primer on HTML, CSS, JavaScript and React, a tour of every file and a step-by-step trace of a login request, see [`../docs/frontend.md`](../docs/frontend.md).
+For a primer on HTML, CSS, JavaScript and React, a tour of every file, step-by-step traces of a login and a check-in, and a walkthrough of Peehu's journey in the browser, see [`../docs/frontend.md`](../docs/frontend.md).
 
 ## Requirements
 
@@ -63,13 +63,22 @@ frontend/
   package.json          libraries and the "npm run dev" command
   src/
     main.jsx            starts React and the router
-    App.jsx             who is logged in; which page to show for the URL
+    App.jsx             who is logged in; the routes (URL to page)
     api.js              every call to the backend
+    names.js            loads patient, doctor and staff names for display
+    format.js           dates and money as text for the screen
     styles.css          all styling
     components/
       Layout.jsx        header: menu per role, name, logout
     pages/
       LoginPage.jsx     login form
+      PatientsPage.jsx  search patients, register, add policy, book a visit
+      VisitsPage.jsx    list of visits, filter by status
+      VisitPage.jsx     one visit: check-in, discharge, and its sections
+      visit/            one component per visit section (vitals, lab orders, bed stay, ...)
+      LabPage.jsx       lab: enter the result for each ordered test
+      BillingPage.jsx   finished visits to bill, and the invoices
+      InvoicePage.jsx   one invoice: lines, insurance claims, payments
 ```
 
-The pages for booking, clinical work and billing are added in later stages (see `../docs/frontend.md`).
+All three stages are built: login (stage 1), patients, visits and lab (stage 2), and billing (stage 3). See `../docs/frontend.md` for what each file does and the walkthrough of Peehu's journey in the browser.

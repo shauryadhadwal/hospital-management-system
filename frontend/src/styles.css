@@ -83,3 +83,123 @@ textarea {
 .error {
   color: #b91c1c;
 }
+
+/* ---- Stage 2 and 3 classes: cards, tables, inline forms, status badges ---- */
+
+/* A white box with a border. Used to group one section of a page. */
+.card {
+  background: white;
+  border: 1px solid #d9e2ec;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* "border-collapse: collapse" merges the lines between cells into one line each. */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left; /* left-align the header and the cells */
+}
+
+.table th,
+.table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e4e7eb;
+  vertical-align: top;
+}
+
+.table th {
+  background: #f0f4f8;
+}
+
+/* Form fields side by side. "flex-wrap: wrap" moves them onto a new line when the window is narrow.
+   "align-items: flex-end" lines up the bottoms of the fields, so the buttons sit level with the inputs. */
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+/* Inside a .row, each label stacks its text above its input. */
+.row label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Buttons inside tables and rows sit next to each other without the extra left margin. */
+.table button,
+.row button {
+  margin-left: 0;
+}
+
+/* A small rounded label showing a status. The class is the status with spaces turned into "-",
+   so "in progress" gets the class "in-progress". */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.85em;
+  background: #e4e7eb;
+  color: #323f4b;
+}
+
+.badge.booked {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge.in-progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.draft {
+  background: #e4e7eb;
+  color: #323f4b;
+}
+
+.badge.issued {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.badge.paid {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.submitted {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge.approved {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badge.ordered {
+  background: #fde68a;
+  color: #78350f;
+}
+
+/* Grey text for secondary information. */
+.muted {
+  color: #616e7c;
+}
+
+/* A row of totals, e.g. "Total / Paid / Balance", spaced out evenly. */
+.summary {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}

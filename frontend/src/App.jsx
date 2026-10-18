@@ -4,7 +4,13 @@ import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { apiGet, clearToken, getToken } from "./api.js";
 import Layout from "./components/Layout.jsx";
+import BillingPage from "./pages/BillingPage.jsx";
+import InvoicePage from "./pages/InvoicePage.jsx";
+import LabPage from "./pages/LabPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
+import PatientsPage from "./pages/PatientsPage.jsx";
+import VisitPage from "./pages/VisitPage.jsx";
+import VisitsPage from "./pages/VisitsPage.jsx";
 
 // A component is a function that returns JSX: HTML-like markup that React turns into real page elements.
 // Component names start with a capital letter, and you use them like tags: <App />.
@@ -43,6 +49,13 @@ export default function App() {
     <Layout staff={staff} onLogout={logout}>
       <Routes>
         <Route path="/" element={<Home staff={staff} />} />
+        {/* ":id" in a path is a placeholder. /visits/5 matches it with id = "5" and the page reads it with useParams(). */}
+        <Route path="/patients" element={<PatientsPage staff={staff} />} />
+        <Route path="/visits" element={<VisitsPage staff={staff} />} />
+        <Route path="/visits/:id" element={<VisitPage staff={staff} />} />
+        <Route path="/lab" element={<LabPage staff={staff} />} />
+        <Route path="/billing" element={<BillingPage staff={staff} />} />
+        <Route path="/billing/:id" element={<InvoicePage staff={staff} />} />
         {/* Any other URL (including /login) sends you back to the home page. */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
@@ -50,12 +63,21 @@ export default function App() {
   );
 }
 
-// A small welcome page. The real pages are added in later stages.
+// The menu item to start with for each role. Home shows it.
+const START_HERE = {
+  receptionist: "Patients. Find or register the patient, then book a visit.",
+  nurse: "Visits. Open a visit and check the patient in, then record vitals.",
+  doctor: "Visits. Open an in-progress visit to consult, order tests and prescribe.",
+  lab: "Lab orders. Enter the result for each order.",
+  admin: "Patients or Visits to look around. Billing is view only. Set up data in Swagger at /docs.",
+};
+
+// A small welcome page. It tells the user which menu item to start with.
 function Home({ staff }) {
   return (
     <div>
       <h1>Welcome, {staff.first_name}</h1>
-      <p>Use the menu above to get started.</p>
+      <p>Start with: {START_HERE[staff.role]}</p>
     </div>
   );
 }

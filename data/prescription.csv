@@ -1,0 +1,6 @@
+id,visit_id,medication_id,dose,frequency,duration_days,quantity,created_at,updated_at
+1,1,1,1 tablet,once a day,30,30,2026-10-14 10:30:00,2026-10-14 10:30:00
+2,1,2,1 tablet,once a day at night,30,30,2026-10-14 10:30:00,2026-10-14 10:30:00
+3,2,3,1 tablet,once a day,30,30,2026-10-13 11:40:00,2026-10-13 11:40:00
+4,3,4,1 tablet,twice a day,30,60,2026-10-14 14:35:00,2026-10-14 14:35:00
+5,4,2,1 tablet,once a day at night,30,30,2026-10-16 14:30:00,2026-10-16 14:30:00

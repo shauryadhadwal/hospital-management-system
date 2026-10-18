@@ -1,0 +1,5 @@
+id,name,unit,price,created_at,updated_at
+1,ECG electrode pack,pack,150.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+2,IV set,piece,200.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+3,Syringe 5 ml,piece,12.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+4,Crepe bandage 10 cm,piece,60.00,2026-01-05 09:00:00,2026-01-05 09:00:00

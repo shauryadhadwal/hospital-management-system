@@ -1,0 +1,4 @@
+id,lab_order_id,result_text,resulted_at,resulted_by,created_at,updated_at
+1,1,Troponin I 0.42 ng/mL (reference below 0.04): elevated,2026-10-12 11:30:00,7,2026-10-12 11:30:00,2026-10-12 11:30:00
+2,2,Hb 14.1 g/dL; WBC 7200/uL; platelets 250000/uL: within normal limits,2026-10-13 12:00:00,7,2026-10-13 12:00:00,2026-10-13 12:00:00
+3,3,Troponin I 0.02 ng/mL (reference below 0.04): normal,2026-10-15 11:20:00,8,2026-10-15 11:20:00,2026-10-15 11:20:00

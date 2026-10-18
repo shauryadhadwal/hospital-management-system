@@ -1,0 +1,6 @@
+id,visit_id,description,is_primary,created_at,updated_at
+1,1,Unstable angina,true,2026-10-12 12:00:00,2026-10-12 12:00:00
+2,1,Hypertension,false,2026-10-12 12:00:00,2026-10-12 12:00:00
+3,2,Essential hypertension,true,2026-10-13 11:35:00,2026-10-13 11:35:00
+4,3,Palpitations,true,2026-10-14 14:30:00,2026-10-14 14:30:00
+5,4,Hypertensive heart disease,true,2026-10-15 12:00:00,2026-10-15 12:00:00

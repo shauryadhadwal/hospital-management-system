@@ -1,0 +1,3 @@
+id,staff_id,license_number,specialty,consultation_fee,created_at,updated_at
+1,1,MCI-CARD-10021,Cardiology,800.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+2,2,MCI-CARD-10458,Cardiology,700.00,2026-01-05 09:00:00,2026-01-05 09:00:00

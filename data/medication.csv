@@ -1,0 +1,6 @@
+id,name,form,strength,price,created_at,updated_at
+1,Aspirin,tablet,75 mg,2.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+2,Atorvastatin,tablet,20 mg,12.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+3,Amlodipine,tablet,5 mg,6.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+4,Metoprolol,tablet,50 mg,8.00,2026-01-05 09:00:00,2026-01-05 09:00:00
+5,Paracetamol,tablet,500 mg,1.50,2026-01-05 09:00:00,2026-01-05 09:00:00
